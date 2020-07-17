@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel = "stylesheet" type="text/css" href = "./style.css">
+    <link rel="stylesheet" href="https://egkoppel.github.io/product-sans/google-fonts.css">
+    <title>Minesweeper</title>
+</head>
+<body>
+    <div class="heading"><b>Minesweeper</b></div>  
+    <div class = "center"></div>
+    <div id = 'dummy' >
+        <h3 id = 'htp-head'> How to Play: </h3>
+        <p>
+            <h4 class = 'htp-text'>States of cells: </h4>
+            <ul>
+                <li class = 'htp-text'><strong>Covered: </strong>The cell which is not clicked yet.</li>
+                <li class = 'htp-text'><strong>Uncovered: </strong>You uncover a covered cell by left-clicking on it.</li>
+                <li class = 'htp-text'><strong>Flagged: </strong>Flag a covered cell by right-clicking if you think there is a mine under it.</li>
+            </ul>
+            <h4 class = 'htp-text'>Uncovering cells</h4>
+            <ol>
+                <li  class = 'htp-text'>Each uncovered cell shows the number of mines present in the cells surrounding it</li>
+                <li  class = 'htp-text'>The first cell you uncover will not contain any mine</li>
+                <li  class = 'htp-text'>Win by flagging all the cells which contain mine</li>
+            </ol>
+        </p>
+        <button class= 'btn' id='back'>Back</button>
+    </div>
+    <div class='main'>
+        <p><button class = "btn">Play<!--<img src="./icons/play.png" id = "play-icon" class = "play">--></button></p>
+        <p><button class = "btn">High Scores</button></p>
+        <p><button class = "btn" id="how">How to Play</button></p>
+        <p><button class = "btn">Quit</button></p>
+    </div>
+    <script src="./script.js"></script>
+
+</body>
+</html>
